@@ -9,7 +9,10 @@ class Create extends Component {
         //TODO: Get ticket by id, pass ticket data, and pass id which will be used to update. Create update mutation accordingly.
         this.formData = {
             title: "",
-            body: "",
+            ServiceOrDepartment: "",
+            Date: "",
+            Description: "",
+            status: "",
             type: ""
         }
     }

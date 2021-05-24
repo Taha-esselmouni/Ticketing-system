@@ -7,8 +7,11 @@ class Create extends Component {
         super(props);
         this.formData = {
             title: "",
-            body: "",
-            type: ""
+            ServiceOrDepartment: "",
+            Date: "",
+            status: "",
+            type: "",
+            Description: "",
         }
     }
 

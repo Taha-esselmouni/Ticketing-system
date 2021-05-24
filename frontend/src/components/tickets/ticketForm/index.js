@@ -26,8 +26,11 @@ class TicketForm extends Component {
             mutation: this.props.mutation,
             variables: {
                 title: this.state.formData.title,
-                body: this.state.formData.body,
-                type: this.state.formData.type
+                type: this.state.formData.type,
+                Date: this.state.formData.Date,
+                ServiceOrDepartment: this.state.formData.ServiceOrDepartment,
+                status: this.state.formData.status,
+                Description: this.state.formData.Description,
             }
         }).then(response => {
             return response.data
@@ -54,8 +57,18 @@ class TicketForm extends Component {
                            onChange={this.handleChange}/>
                 </FormGroup>
                 <FormGroup>
-                    <Label for="ticketBody">Body</Label>
-                    <Input type="textarea" name="body" id="ticketBody" value={this.state.formData.body}
+                    <Label for="ServiceOrDepartment">Department</Label>
+                    <Input type="textarea" name="ServiceOrDepartment" id="ServiceOrDepartment" value={this.state.formData.ServiceOrDepartment}
+                           onChange={this.handleChange}/>
+                </FormGroup>
+                <FormGroup>
+                    <Label for="date">Date</Label>
+                    <Input type="textarea" name="Date" id="Date" value={this.state.formData.Date}
+                           onChange={this.handleChange}/>
+                </FormGroup>
+                <FormGroup>
+                    <Label for="Description">Description</Label>
+                    <Input type="textarea" name="Description" id="Description" value={this.state.formData.Description}
                            onChange={this.handleChange}/>
                 </FormGroup>
                 <Query query={getTicketTypes}>

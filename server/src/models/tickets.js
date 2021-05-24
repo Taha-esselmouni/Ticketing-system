@@ -10,20 +10,28 @@ const tickets = new mongoose.Schema({
         type: String,
         required: true,
     },
-    body: {
-        type: String,
-        required: true,
-    },
     type: {
         type: String,
         required: true,
         enum: ticketTypes
     },
+    Date: {
+        type :Date
+    },
+    ServiceOrDepartment: {
+        type: String,
+        required: true,
+    },
     status: {
         type: String,
         enum: ticketStatus,
         default: 'NEW'
-    }
+    },
+    Description: {
+        type: String,
+        required: true,
+    },
+
 });
 tickets.set('toObject', {virtuals: true});
 tickets.method('toGraph', function toGraph() {
