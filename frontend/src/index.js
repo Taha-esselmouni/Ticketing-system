@@ -18,7 +18,7 @@ const store = createStore(authToken);
 */
 class App extends Component {
   /**
-   * get localstorage token (if any),
+   * get token (if any),
    * create apollo client with stored token
    * @param {object} props
    */

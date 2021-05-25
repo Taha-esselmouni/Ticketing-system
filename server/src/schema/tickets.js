@@ -7,20 +7,18 @@ const ticketsTypeDefs = `
   type Ticket {
     _id: ID!
     title: String!
+    body: String!
     type: types!
     userId: String
-    user: User
-    ServiceOrDepartment: String!
+    user: User,
     status: states!
-    Description: String!
   }
   input TicketInput {
     title: String!
-    Date: String!
+    body: String!
     type: String!
     userId: String
-    ServiceOrDepartment:String!
-    Description: String!
+    status: String
   }
   input TicketFilterInput {
     limit: Int

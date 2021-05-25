@@ -6,7 +6,7 @@ class Login extends Component {
         super(props);
         this.state = {
             formData: {
-                email: 'taha@gmail.com',
+                email: 'test@test.com',
                 password: '123'
             },
             error: false

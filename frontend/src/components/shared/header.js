@@ -3,6 +3,7 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
+    NavbarBrand,
     Nav,
     NavItem,
     NavLink,
@@ -33,7 +34,7 @@ class Header extends Component {
         return (
             <div>
                 <Navbar color="light" light expand="md">
-                    <Link to={"/"} className={"navbar-brand"}>React ticketing</Link>
+                    <Link to={"/"} className={"navbar-brand"}>ticketing</Link>
                     <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
@@ -42,9 +43,6 @@ class Header extends Component {
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/components/">Sign out</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/ticketing-system">GitHub</NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>

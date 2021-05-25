@@ -14,7 +14,7 @@ class Dashboard extends Component {
             <Fragment>
                 <Row className="mt-5">
                     <Col>
-                        <h1>Welcome to the homepage</h1>
+                        <h1>homepage</h1>
                     </Col>
                 </Row>
                 <Row className="mt-2">
