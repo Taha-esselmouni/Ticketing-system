@@ -2,8 +2,7 @@ import React, {Component} from "react";
 import {Route, Switch} from "react-router-dom";
 import Create from "./create";
 import View from "./view";
-import Edit from "./edit";
-
+import Edit from "./edit"
 class Tickets extends Component {
     constructor(props) {
         super(props);
