@@ -410,13 +410,19 @@
         "interfaces": null,
         "enumValues": [
           {
-            "name": "HELPDESK",
+            "name": "problems",
             "description": "",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "MAINTAINANCE",
+            "name": "HELP",
+            "description": "",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "prbReseaux",
             "description": "",
             "isDeprecated": false,
             "deprecationReason": null

@@ -9,10 +9,11 @@ const card = ({_id, title, type, body, user}) => {
         <CardBody>
             <CardTitle>{title}</CardTitle>
             <CardSubtitle>Created
-                by: {user.firstName} {user.lastName}</CardSubtitle>
+                by: {user.firstName} {user.lastName} </CardSubtitle>
             <CardText>{body}</CardText>
         </CardBody>
     </Card>)
+    
 
 };
 

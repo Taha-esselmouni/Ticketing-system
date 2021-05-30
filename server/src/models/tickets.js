@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const {ticketTypes, ticketStatus} = require("../constants/schmas");
+const {ticketTypes, ticketStatus} = require("../constants/schemes");
 
 const tickets = new mongoose.Schema({
     userId: {

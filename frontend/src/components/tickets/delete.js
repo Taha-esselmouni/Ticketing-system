@@ -19,4 +19,4 @@ class Ticket extends Component {
     }
 }
 
-export default Create;
+export default Delete;
