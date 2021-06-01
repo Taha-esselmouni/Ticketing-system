@@ -10490,6 +10490,11 @@ react@^16.13.1:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
+reactdom@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.nlark.com/reactdom/download/reactdom-2.0.0.tgz#beeac4d698e3bf3ff0523c79d336a5ff2d532036"
+  integrity sha1-vurE1pjjvz/wUjx50zal/y1TIDY=
+
 reactstrap@^8.9.0:
   version "8.9.0"
   resolved "https://registry.npm.taobao.org/reactstrap/download/reactstrap-8.9.0.tgz#bca4afa3f5cd18899ef9b33d877a141886d5abae"

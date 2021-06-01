@@ -2,7 +2,8 @@ import React, {Component} from "react";
 import {Route, Switch} from "react-router-dom";
 import Create from "./create";
 import View from "./view";
-import Edit from "./edit"
+import Edit from "./edit";
+import Delete from "./delete";
 class Tickets extends Component {
     constructor(props) {
         super(props);
@@ -12,7 +13,8 @@ class Tickets extends Component {
         return (
             <Switch>
                 <Route path={`${this.props.match.path}/create`} render={(props) => <Create {...props} client={this.props.client} />}/>
-                <Route exact path={`${this.props.match.path}/edit/:id`} component={Edit}/>
+                <Route exact path={`${this.props.match.path}/edit/:id`} component={Edit} />
+                <Route exact path={`${this.props.match.path}/Delete/:id`} component={Delete}/>
                 <Route exact path={`${this.props.match.path}`} component={View}/>
             </Switch>);
     }
