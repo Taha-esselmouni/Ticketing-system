@@ -4,8 +4,9 @@ import {Card, CardHeader, CardBody, CardSubtitle, CardText, CardTitle} from "rea
 
 const card = ({_id, title, type, body, user}) => {
     return (<Card key={_id} className={"my-2"}>
-        <CardHeader>{type} <Link to={`/tickets/edit/${_id}`}> <i className="far fa-edit"><span className={"sr-only"}>Edit Ticket</span></i></Link><i
-            className="far fa-trash-alt"><span className={"sr-only"}>Delete Ticket</span></i></CardHeader>
+        
+        <CardHeader>{type} <Link to={`/tickets/edit/${_id}`}> <i className="far fa-edit"><span className={"sr-only"}>Edit Ticket</span></i></Link>
+            <i className="far fa-trash-alt"><span className={"sr-only"}>Delete Ticket</span></i></CardHeader>
         <CardBody>
             <CardTitle>{title}</CardTitle>
             <CardSubtitle>Created

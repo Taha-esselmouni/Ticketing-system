@@ -73,3 +73,45 @@
         }
       }
       }`;
+      export const EditTicket = gql`
+      mutation EditTicket($title:String!,$body:String!,$type:String!){
+      Ticket(input: {
+        title: $title,
+        body: $body,
+        type: $type,
+      }) {_id}
+      }`;
+      export const EditTicketTypes = gql`
+      {
+      types: __type(name: "types") {
+        values:enumValues {
+          name
+        }
+      }
+      }`;
+      export const EditTicketStates = gql`
+      {
+      states: __type(name: "states") {
+        values:enumValues {
+          name
+        }
+      }
+      }`;
+      export const EditAllEnums = gql`
+      {
+      types: __type(name: "types") {
+        values:enumValues {
+          name
+        }
+      }
+      states: __type(name: "states") {
+        values:enumValues {
+          name
+        }
+      }
+      }`;
+
+      export const DELETE_Ticket = gql`
+      mutation DeleteTicket($id: String!){
+      deleteTicket(id: $id)
+       }`;

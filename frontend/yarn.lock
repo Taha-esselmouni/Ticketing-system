@@ -21,6 +21,25 @@
     tslib "^1.10.0"
     zen-observable "^0.8.14"
 
+"@apollo/client@latest":
+  version "3.3.19"
+  resolved "https://registry.nlark.com/@apollo/client/download/@apollo/client-3.3.19.tgz?cache=0&sync_timestamp=1622048832022&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40apollo%2Fclient%2Fdownload%2F%40apollo%2Fclient-3.3.19.tgz#f1172dc9b9d7eae04c8940b047fd3b452ef92d2c"
+  integrity sha1-8RctybnX6uBMiUCwR/07RS75LSw=
+  dependencies:
+    "@graphql-typed-document-node/core" "^3.0.0"
+    "@types/zen-observable" "^0.8.0"
+    "@wry/context" "^0.6.0"
+    "@wry/equality" "^0.4.0"
+    fast-json-stable-stringify "^2.0.0"
+    graphql-tag "^2.12.0"
+    hoist-non-react-statics "^3.3.2"
+    optimism "^0.16.0"
+    prop-types "^15.7.2"
+    symbol-observable "^2.0.0"
+    ts-invariant "^0.7.0"
+    tslib "^1.10.0"
+    zen-observable "^0.8.14"
+
 "@apollo/federation@0.24.0":
   version "0.24.0"
   resolved "https://registry.nlark.com/@apollo/federation/download/@apollo/federation-0.24.0.tgz#c4d9641b8681decc080c47b3e97daa50c78d30ba"
@@ -68,6 +87,13 @@
     "@wry/equality" "^0.1.9"
     ts-invariant "^0.4.4"
     tslib "^1.10.0"
+
+"@apollo/react-hooks@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/@apollo/react-hooks/download/@apollo/react-hooks-4.0.0.tgz#7bf7b320c90d276f637d9a84b503e17b840dd4e6"
+  integrity sha1-e/ezIMkNJ29jfZqEtQPhe4QN1OY=
+  dependencies:
+    "@apollo/client" latest
 
 "@apollo/react-ssr@^3.1.5":
   version "3.1.5"
@@ -2529,6 +2555,21 @@ anymatch@^3, anymatch@~3.1.1:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+apollo-boost@^0.4.9:
+  version "0.4.9"
+  resolved "https://registry.npm.taobao.org/apollo-boost/download/apollo-boost-0.4.9.tgz#ab3ba539c2ca944e6fd156583a1b1954b17a6791"
+  integrity sha1-qzulOcLKlE5v0VZYOhsZVLF6Z5E=
+  dependencies:
+    apollo-cache "^1.3.5"
+    apollo-cache-inmemory "^1.6.6"
+    apollo-client "^2.6.10"
+    apollo-link "^1.0.6"
+    apollo-link-error "^1.0.3"
+    apollo-link-http "^1.3.1"
+    graphql-tag "^2.4.2"
+    ts-invariant "^0.4.0"
+    tslib "^1.10.0"
+
 apollo-cache-inmemory@^1.6.6:
   version "1.6.6"
   resolved "https://registry.npm.taobao.org/apollo-cache-inmemory/download/apollo-cache-inmemory-1.6.6.tgz#56d1f2a463a6b9db32e9fa990af16d2a008206fd"
@@ -2686,7 +2727,7 @@ apollo-link-context@^1.0.20, apollo-link-context@^1.0.9:
     apollo-link "^1.2.14"
     tslib "^1.9.3"
 
-apollo-link-error@^1.1.1:
+apollo-link-error@^1.0.3, apollo-link-error@^1.1.1:
   version "1.1.13"
   resolved "https://registry.npm.taobao.org/apollo-link-error/download/apollo-link-error-1.1.13.tgz#c1a1bb876ffe380802c8df0506a32c33aad284cd"
   integrity sha1-waG7h2/+OAgCyN8FBqMsM6rShM0=
@@ -2704,7 +2745,7 @@ apollo-link-http-common@^0.2.16:
     ts-invariant "^0.4.0"
     tslib "^1.9.3"
 
-apollo-link-http@^1.5.17, apollo-link-http@^1.5.5:
+apollo-link-http@^1.3.1, apollo-link-http@^1.5.17, apollo-link-http@^1.5.5:
   version "1.5.17"
   resolved "https://registry.npm.taobao.org/apollo-link-http/download/apollo-link-http-1.5.17.tgz#499e9f1711bf694497f02c51af12d82de5d8d8ba"
   integrity sha1-SZ6fFxG/aUSX8CxRrxLYLeXY2Lo=
@@ -2713,7 +2754,7 @@ apollo-link-http@^1.5.17, apollo-link-http@^1.5.5:
     apollo-link-http-common "^0.2.16"
     tslib "^1.9.3"
 
-apollo-link@^1.0.0, apollo-link@^1.2.14, apollo-link@^1.2.3:
+apollo-link@^1.0.0, apollo-link@^1.0.6, apollo-link@^1.2.14, apollo-link@^1.2.3:
   version "1.2.14"
   resolved "https://registry.npm.taobao.org/apollo-link/download/apollo-link-1.2.14.tgz?cache=0&sync_timestamp=1598867329134&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fapollo-link%2Fdownload%2Fapollo-link-1.2.14.tgz#3feda4b47f9ebba7f4160bef8b977ba725b684d9"
   integrity sha1-P+2ktH+eu6f0Fgvvi5d7pyW2hNk=
@@ -6175,7 +6216,7 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.npm.taobao.org/graceful-fs/download/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha1-/wQLKwhTsjw9MQJ1I3BvGIXXa+4=
 
-graphql-tag@2.12.4, graphql-tag@^2.10.1, graphql-tag@^2.11.0, graphql-tag@^2.12.0:
+graphql-tag@2.12.4, graphql-tag@^2.10.1, graphql-tag@^2.12.0, graphql-tag@^2.12.4, graphql-tag@^2.4.2:
   version "2.12.4"
   resolved "https://registry.nlark.com/graphql-tag/download/graphql-tag-2.12.4.tgz#d34066688a4f09e72d6f4663c74211e9b4b7c4bf"
   integrity sha1-00BmaIpPCectb0Zjx0IR6bS3xL8=
@@ -8892,6 +8933,14 @@ optimism@^0.15.0:
   version "0.15.0"
   resolved "https://registry.nlark.com/optimism/download/optimism-0.15.0.tgz#c65e694bec7ce439f41e9cb8fc261a72d798125b"
   integrity sha1-xl5pS+x85Dn0Hpy4/CYacteYEls=
+  dependencies:
+    "@wry/context" "^0.6.0"
+    "@wry/trie" "^0.3.0"
+
+optimism@^0.16.0:
+  version "0.16.1"
+  resolved "https://registry.nlark.com/optimism/download/optimism-0.16.1.tgz#7c8efc1f3179f18307b887e18c15c5b7133f6e7d"
+  integrity sha1-fI78HzF58YMHuIfhjBXFtxM/bn0=
   dependencies:
     "@wry/context" "^0.6.0"
     "@wry/trie" "^0.3.0"
