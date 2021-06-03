@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NOTE
 This repository is still undergoing development. and not ready to be used yet.
 ## Progress so far
@@ -55,3 +56,8 @@ Install `apollo`
 ![screen-ticketing user](https://user-images.githubusercontent.com/44399342/119634874-0e5fa900-be0b-11eb-95a0-d52809daa8b2.png)
 # Create From 
                                                                            Taha Esselmouni
+=======
+# Ticketing-system
+#in prodects
+#une application nodejs/reactjs de gestion de tickets.
+>>>>>>> d2cd8083d13f6f25324b65693eebaaf077fe6171
